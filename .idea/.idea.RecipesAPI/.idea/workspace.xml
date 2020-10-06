@@ -9,16 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c621d124-0018-4dbd-ac29-e9c24d87ed18" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/GenericRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/IGenericRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/RecipesAPI.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Data/RecipesAPI.Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/RecipesDB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Data/RecipesDB.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Services/RecipesAPI.Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Services/RecipesAPI.Services.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/RecipesAPI.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/RecipesAPI.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +36,9 @@
         <option value="$PROJECT_DIR$/RecipesAPI.Data/RecipesDB.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Web/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Repositories/Class1.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/IGenericRepository.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/GenericRepository.cs" />
       </list>
     </option>
   </component>
@@ -103,7 +101,8 @@
       <updated>1601977732750</updated>
       <workItem from="1601977738831" duration="1451000" />
       <workItem from="1601980730083" duration="2915000" />
-      <workItem from="1602000636913" duration="4160000" />
+      <workItem from="1602000636913" duration="4289000" />
+      <workItem from="1602016187838" duration="280000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1601981033062</created>
@@ -162,10 +161,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1311" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601980472167" />
-    <state x="175" y="31" key="Rider.ProjectTemplateDialog.Size" timestamp="1601978406760">
+    <state x="175" y="31" key="Rider.ProjectTemplateDialog.Size" timestamp="1602016300540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="31" key="Rider.ProjectTemplateDialog.Size/0.0.1366.728@0.0.1366.728" timestamp="1601978406760" />
+    <state x="175" y="31" key="Rider.ProjectTemplateDialog.Size/0.0.1366.728@0.0.1366.728" timestamp="1602016300540" />
     <state x="175" y="27" key="Vcs.Push.Dialog.v2" timestamp="1601987002463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

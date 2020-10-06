@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace RecipesAPI.Data
 {
     public class Recipe
     {
+        [Key]
         private int RecipeId { get; set; }
         private string RecipeName { get; set; }
         private Category Category { get; set; }
