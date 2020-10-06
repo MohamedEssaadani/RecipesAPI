@@ -7,6 +7,11 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="RecipesAPI.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20201006204422_InitialMigration.cs" t="Include" />
+          <e p="20201006204422_InitialMigration.Designer.cs" t="Include" />
+          <e p="RecipesDBModelSnapshot.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
           <e p="Category.cs" t="Include" />
           <e p="Ingredient.cs" t="Include" />
@@ -40,7 +45,6 @@
       </e>
       <e p="RecipesAPI.Services" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -49,6 +53,10 @@
           </e>
         </e>
         <e p="RecipesAPI.Services.csproj" t="IncludeRecursive" />
+        <e p="RecipeService" t="Include">
+          <e p="IRecipeService.cs" t="Include" />
+          <e p="RecipeService.cs" t="Include" />
+        </e>
       </e>
       <e p="RecipesAPI.sln" t="IncludeFlat" />
       <e p="RecipesAPI.Web" t="IncludeRecursive">

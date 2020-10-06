@@ -5,9 +5,9 @@ namespace RecipesAPI.Data
     public class IngredientQuantity
     {
         [Key]
-        private int QuantityId { get; set; }
-        private Recipe Recipe { get; set; }
-        private Ingredient Ingredient { get; set; }
-        private int Qty { get; set; }
+        public int QuantityId { get; set; }
+        public Recipe Recipe { get; set; }
+        public Ingredient Ingredient { get; set; }
+        public int Qty { get; set; }
     }
 }

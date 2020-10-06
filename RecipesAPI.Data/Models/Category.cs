@@ -5,7 +5,7 @@ namespace RecipesAPI.Data
     public class Category
     {
         [Key]
-        private int CategoryId { get; set; }
-        private string CategoryName { get; set; }
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
     }
 }

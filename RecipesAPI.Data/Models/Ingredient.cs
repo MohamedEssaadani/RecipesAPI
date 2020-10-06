@@ -5,7 +5,7 @@ namespace RecipesAPI.Data
     public class Ingredient
     {
         [Key]
-        private int IngredientId { get; set; }
-        private string IngredientName { get; set; }
+        public int IngredientId { get; set; }
+        public string IngredientName { get; set; }
     }
 }
