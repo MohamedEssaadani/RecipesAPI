@@ -9,15 +9,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c621d124-0018-4dbd-ac29-e9c24d87ed18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/Category.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/Ingredient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/IngredientQuantity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/Recipe.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/RecipesDB.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/RecipesAPI.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Data/RecipesAPI.Data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Services/RecipesAPI.Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Services/RecipesAPI.Services.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/RecipesAPI.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/RecipesAPI.Web.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +34,21 @@
       <list>
         <option value="$PROJECT_DIR$/RecipesAPI.Data/Class1.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Services/Class1.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Data/Category.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Data/Ingredient.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Data/Quantity.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Data/IngredientQuantity.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Data/Recipe.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Data/RecipesDB.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1iV11AShGOzbQI3aMpaGnHiPrPh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -89,13 +100,22 @@
       <option name="presentableId" value="Default" />
       <updated>1601977732750</updated>
       <workItem from="1601977738831" duration="1451000" />
+      <workItem from="1601980730083" duration="2819000" />
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1601981033062</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601981033062</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -107,9 +127,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1311" height="156" key="GridCell.Tab.0.bottom" timestamp="1601980472167">
@@ -132,5 +155,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="175" y="31" key="Rider.ProjectTemplateDialog.Size/0.0.1366.728@0.0.1366.728" timestamp="1601978406760" />
+    <state x="175" y="27" key="Vcs.Push.Dialog.v2" timestamp="1601981045079">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="175" y="27" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601981045079" />
+    <state x="437" y="242" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601980930829">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="437" y="242" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601980930829" />
   </component>
 </project>
