@@ -9,17 +9,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c621d124-0018-4dbd-ac29-e9c24d87ed18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/Category.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/Ingredient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/IngredientQuantity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/Recipe.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/RecipesDB.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/Class1.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/RecipesAPI.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Data/RecipesAPI.Data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/RecipesDB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Data/RecipesDB.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RecipesAPI.Services/RecipesAPI.Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Services/RecipesAPI.Services.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/Controllers/WeatherForecastController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/RecipesAPI.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/RecipesAPI.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,8 @@
         <option value="$PROJECT_DIR$/RecipesAPI.Data/IngredientQuantity.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Data/Recipe.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Data/RecipesDB.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Web/appsettings.Development.json" />
       </list>
     </option>
   </component>
@@ -57,6 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.RecipesAPI.Web">
@@ -100,7 +102,8 @@
       <option name="presentableId" value="Default" />
       <updated>1601977732750</updated>
       <workItem from="1601977738831" duration="1451000" />
-      <workItem from="1601980730083" duration="2819000" />
+      <workItem from="1601980730083" duration="2915000" />
+      <workItem from="1602000636913" duration="4160000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1601981033062</created>
@@ -109,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601981033062</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create Models in Data ClassLib">
+      <created>1601986989100</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601986989100</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +142,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="Create Models in Data ClassLib" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Models in Data ClassLib" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1311" height="156" key="GridCell.Tab.0.bottom" timestamp="1601980472167">
@@ -155,10 +166,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="175" y="31" key="Rider.ProjectTemplateDialog.Size/0.0.1366.728@0.0.1366.728" timestamp="1601978406760" />
-    <state x="175" y="27" key="Vcs.Push.Dialog.v2" timestamp="1601981045079">
+    <state x="175" y="27" key="Vcs.Push.Dialog.v2" timestamp="1601987002463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="27" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601981045079" />
+    <state x="175" y="27" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601987002463" />
     <state x="437" y="242" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601980930829">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

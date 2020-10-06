@@ -5,7 +5,7 @@ namespace RecipesAPI.Data
 {
     public class RecipesDB : DbContext
     {
-        public RecipesDB() : base()
+        public RecipesDB(DbContextOptions<RecipesDB> options) : base(options)
         {
             
         }
