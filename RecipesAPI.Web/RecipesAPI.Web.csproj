@@ -15,10 +15,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\RecipesAPI.Data\RecipesAPI.Data.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controllers" />
+      <ProjectReference Include="..\RecipesAPI.Repositories\RecipesAPI.Repositories.csproj" />
+      <ProjectReference Include="..\RecipesAPI.Services\RecipesAPI.Services.csproj" />
     </ItemGroup>
 
 

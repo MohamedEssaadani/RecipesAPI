@@ -44,6 +44,6 @@ namespace RecipesAPI.Repositories.GenericRepository
         public void Save()
         {
             _context.SaveChanges();
-        }
+        }       
     }
 }

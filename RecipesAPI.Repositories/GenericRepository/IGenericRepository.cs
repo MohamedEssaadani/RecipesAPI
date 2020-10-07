@@ -10,5 +10,7 @@ namespace RecipesAPI.Repositories.GenericRepository
         public IEnumerable<T> GetAll();
         public void Delete(int id);
         public void Update(T obj);
+
+        public void Save();
     }
 }

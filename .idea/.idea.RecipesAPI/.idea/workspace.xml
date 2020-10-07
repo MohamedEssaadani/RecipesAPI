@@ -9,23 +9,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c621d124-0018-4dbd-ac29-e9c24d87ed18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Migrations/20201006204422_InitialMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Migrations/20201006204422_InitialMigration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/Migrations/RecipesDBModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.Services/RecipeService/IRecipeService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecipesAPI.Services/RecipeService/RecipeService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecipesAPI.Web/Controllers/RecipesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecipesAPI.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/Models/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/Ingredient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/Models/IngredientQuantity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/IngredientQuantity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Data/Models/Recipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Data/Models/Recipe.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/GenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/GenericRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/IGenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/IGenericRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Repositories/RecipesAPI.Repositories.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Repositories/RecipesAPI.Repositories.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Services/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Services/RecipesAPI.Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Services/RecipesAPI.Services.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Services/RecipeService/RecipeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Services/RecipeService/RecipeService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/RecipesAPI.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/RecipesAPI.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/RecipesAPI.Services/RecipeService/RecipeService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -46,17 +42,20 @@
         <option value="$PROJECT_DIR$/RecipesAPI.Data/IngredientQuantity.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Data/Recipe.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Data/RecipesDB.cs" />
-        <option value="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Repositories/Class1.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Data/Models/Category.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Data/Models/Ingredient.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Data/Models/IngredientQuantity.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Data/Models/Recipe.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Web/appsettings.Development.json" />
-        <option value="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/IGenericRepository.cs" />
-        <option value="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/GenericRepository.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Services/IRecipeService.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Services/RecipeService.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Web/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/GenericRepository.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/IGenericRepository.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Services/RecipeService/RecipeService.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Web/Controllers/RecipesController.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +120,8 @@
       <workItem from="1601977738831" duration="1451000" />
       <workItem from="1601980730083" duration="2915000" />
       <workItem from="1602000636913" duration="4289000" />
-      <workItem from="1602016187838" duration="4310000" />
+      <workItem from="1602016187838" duration="6399000" />
+      <workItem from="1602062998024" duration="5182000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1601981033062</created>
@@ -137,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601986989100</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Repository-Service">
+      <created>1602021034375</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602021034375</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,25 +169,26 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial" />
     <MESSAGE value="Create Models in Data ClassLib" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Models in Data ClassLib" />
+    <MESSAGE value="Repository-Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repository-Service" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1311" height="156" key="GridCell.Tab.0.bottom" timestamp="1601980472167">
+    <state width="1311" height="156" key="GridCell.Tab.0.bottom" timestamp="1602068925196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601980472167" />
-    <state width="1311" height="156" key="GridCell.Tab.0.center" timestamp="1601980472167">
+    <state width="1311" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602068925196" />
+    <state width="1311" height="156" key="GridCell.Tab.0.center" timestamp="1602068925196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601980472167" />
-    <state width="1311" height="156" key="GridCell.Tab.0.left" timestamp="1601980472167">
+    <state width="1311" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602068925196" />
+    <state width="1311" height="156" key="GridCell.Tab.0.left" timestamp="1602068925196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601980472167" />
-    <state width="1311" height="156" key="GridCell.Tab.0.right" timestamp="1601980472167">
+    <state width="1311" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602068925196" />
+    <state width="1311" height="156" key="GridCell.Tab.0.right" timestamp="1602068925196">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601980472167" />
+    <state width="1311" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602068925196" />
     <state x="175" y="31" key="Rider.ProjectTemplateDialog.Size" timestamp="1602016300540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -189,10 +197,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="491" y="0" key="RiderGenerateDialog/0.0.1366.728@0.0.1366.728" timestamp="1602020857431" />
-    <state x="175" y="27" key="Vcs.Push.Dialog.v2" timestamp="1601987002463">
+    <state x="-154" y="71" width="1182" height="544" key="VCS.FileHistoryDialog" timestamp="1602021934845">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="27" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601987002463" />
+    <state x="-154" y="71" width="1182" height="544" key="VCS.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1602021934845" />
+    <state x="175" y="27" key="Vcs.Push.Dialog.v2" timestamp="1602021044943">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="175" y="27" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602021044943" />
+    <state x="285" y="65" key="WebReferenceSession.Dialog" timestamp="1602022238205">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="285" y="65" key="WebReferenceSession.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1602022238205" />
     <state x="437" y="242" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601980930829">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
