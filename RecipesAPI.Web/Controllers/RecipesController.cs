@@ -23,6 +23,9 @@ namespace RecipesAPI.Web.Controllers
         public ActionResult GetRecipes()
         {
             IEnumerable<Recipe> recipes = _recipeService.GetAll();
+            
+            if(recipes == null || !recipes.Any())
+                return NotFound("Not Recipes Found!");
                 
             return Ok(recipes);
         }
@@ -31,6 +34,9 @@ namespace RecipesAPI.Web.Controllers
         public ActionResult GetRecipe(int id)
         {
             Recipe recipe = _recipeService.GetById(id);
+            
+            if(recipe == null )
+                return NotFound($"No Recipe With ID : {id} Found!");
 
             return Ok(recipe);
         }
@@ -43,16 +49,22 @@ namespace RecipesAPI.Web.Controllers
             
             _recipeService.Add(recipe);
 
-                return Ok(recipe);
+            return Ok(recipe);
                 
         }
 
         [HttpDelete("/api/recipes/{id}")]
         public ActionResult DeleteRecipe(int id)
         {
-            _recipeService.Delete(id);
-                
-            return Ok();
+            Recipe recipe = _recipeService.GetById(id);
+            
+            if(recipe != null)
+            {
+                _recipeService.Delete(id);
+                return Ok();
+            }
+            
+            return NotFound($"No Recipe With ID : {id} Found!");
         }
 
         [HttpPut("/api/recipes/{id}")]
@@ -63,6 +75,9 @@ namespace RecipesAPI.Web.Controllers
                 return BadRequest();
             }
             
+            if (_recipeService.GetById(recipe.RecipeId) == null)
+                return NotFound($"No Recipe With ID : {id} Found!");
+
             _recipeService.Update(recipe);
             
             return Ok();

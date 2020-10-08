@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using RecipesAPI.Data;
 using RecipesAPI.Services;
@@ -19,7 +20,9 @@ namespace RecipesAPI.Web.Controllers
         public ActionResult GetCategories()
         {
             IEnumerable<Category> categories = _categoryService.GetAll();
-
+            if(categories == null || !categories.Any())
+                return NotFound("Not Categories Found!");
+            
             return Ok(categories);
         }
         
@@ -27,7 +30,8 @@ namespace RecipesAPI.Web.Controllers
         public ActionResult GetCategory(int id)
         {
             Category category = _categoryService.GetById(id);
-        
+            if(category == null )
+                return NotFound($"No Category With ID : {id} Found!");
             return Ok(category);
         }
         
@@ -39,15 +43,20 @@ namespace RecipesAPI.Web.Controllers
 
             _categoryService.Add(category);
 
-            return Ok();
+            return Ok($"Category : {category.CategoryName} Added Successfully!");
         }
 
         [HttpDelete("/api/categories/{id}")]
         public ActionResult DeleteCategory(int id)
         {
-            _categoryService.Delete(id);
-            
-            return Ok();
+            Category category = _categoryService.GetById(id);
+
+            if (category != null)
+            {
+                _categoryService.Delete(id);
+                return Ok();
+            }
+            return NotFound($"No Category With ID : {id} Found!");
         }
 
         [HttpPut("/api/categories/{id}")]
@@ -57,6 +66,9 @@ namespace RecipesAPI.Web.Controllers
             {
                 return BadRequest();
             }
+
+            if (_categoryService.GetById(category.CategoryId) == null)
+                return NotFound($"No Category With ID : {id} Found!");
             
             _categoryService.Update(category);
 
