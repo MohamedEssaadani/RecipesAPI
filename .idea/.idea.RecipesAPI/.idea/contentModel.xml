@@ -52,6 +52,8 @@
         </e>
         <e p="RecipesAPI.Services.csproj" t="IncludeRecursive" />
         <e p="RecipeService" t="Include">
+          <e p="CategoryService.cs" t="Include" />
+          <e p="ICategoryService.cs" t="Include" />
           <e p="IRecipeService.cs" t="Include" />
           <e p="RecipeService.cs" t="Include" />
         </e>
@@ -62,6 +64,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="CategoriesController.cs" t="Include" />
           <e p="RecipesController.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

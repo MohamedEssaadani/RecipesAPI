@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 using RecipesAPI.Data;
 using RecipesAPI.Repositories.GenericRepository;
 
@@ -16,23 +18,36 @@ namespace RecipesAPI.Services
         
         public void Add(Recipe obj)
         {
-            _repository.Add(obj);
-            Save();
+            try
+            {
+                _repository.Add(obj);
+                Save();
+            }
+            catch (Exception)
+            {
+                throw new InvalidOperationException("Error While Creating New Recipe!!");
+            }
         }
 
         public Recipe GetById(int id)
         {
-           var recipe = _repository.GetById(id);
+            Recipe recipe = _repository.GetById(id);
 
            if (recipe != null)
                return recipe;
            else
-               throw new InvalidOperationException($"There is no recipe with ID :{id} ");
+               throw new InvalidOperationException($"No Recipe Found With ID :{id} ");
         }
 
         public IEnumerable<Recipe> GetAll()
         {
-            return _repository.GetAll();
+            IEnumerable<Recipe> recipes = _repository.GetAll();
+
+            if (recipes is null || !recipes.Any())
+                throw new InvalidOperationException($"No Recipes Found!");
+            else
+                return recipes;
+
         }
 
         public void Delete(int id)
@@ -45,14 +60,29 @@ namespace RecipesAPI.Services
                 Save();
             }
             else
-                throw new InvalidOperationException($"There is no recipe with  ID :{id} ");
+                throw new InvalidOperationException($"No Recipe Found With ID :{id} ");
 
         }
 
         public void Update(Recipe obj)
         {
-           _repository.Update(obj);
-          Save();
+            try
+            {
+                _repository.Update(obj);
+                Save();
+            }
+            catch (DbUpdateException)
+            {
+             
+                if (_repository.GetById(obj.RecipeId) == null)
+                {
+                    throw new InvalidOperationException($"No Recipe Found With ID :{obj.RecipeId} ");
+                }
+                else
+                {
+                    throw;
+                }
+            }
         }
 
         public void Save()
