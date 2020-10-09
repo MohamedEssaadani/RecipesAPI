@@ -29,7 +29,6 @@ namespace RecipesAPI.Web
             {
                 options.UseSqlServer(Configuration.GetConnectionString("RecipesDB"));
             });
-
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped(typeof(IRecipeService), typeof(RecipeService));
             services.AddScoped(typeof(ICategoryService), typeof(CategoryService));

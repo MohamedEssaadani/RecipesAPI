@@ -54,7 +54,7 @@ namespace RecipesAPI.Web.Controllers
             if (category != null)
             {
                 _categoryService.Delete(id);
-                return Ok();
+                return Ok($"Category with ID = {id} is Deleted Successfully.");
             }
             return NotFound($"No Category With ID : {id} Found!");
         }
@@ -71,8 +71,8 @@ namespace RecipesAPI.Web.Controllers
                 return NotFound($"No Category With ID : {id} Found!");
             
             _categoryService.Update(category);
-
-            return Ok();
+            
+            return Ok($"Updated Successfully.");
         }
     }
 }

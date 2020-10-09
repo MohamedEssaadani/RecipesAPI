@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using RecipesAPI.Data;
 
@@ -35,13 +36,18 @@ namespace RecipesAPI.Repositories.GenericRepository
             _context.Remove(result);
         }
 
-        public void Update(T obj)
+        public  void Update(T obj)
         {
-            table.Attach(obj);
-            _context.Entry(obj).State = EntityState.Modified;
+            //table.Attach(obj);
+
+            //_context.Entry(obj).State = EntityState.Modified;
+            //table.Update(obj);
+            //_context.Update(obj);
+            //_context.Entry(obj).State = EntityState.Modified;
+            //table.Update(obj);
         }
 
-        public void Save()
+        public  void Save()
         {
             _context.SaveChanges();
         }       

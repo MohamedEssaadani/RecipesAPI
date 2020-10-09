@@ -43,7 +43,7 @@ namespace RecipesAPI.Services
 
         }
 
-        public void Update(Category obj)
+        public async void Update(Category obj)
         {
             _repository.Update(obj);
             Save();
