@@ -17,4 +17,8 @@
       <ProjectReference Include="..\RecipesAPI.Data\RecipesAPI.Data.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="CategoryRepository" />
+    </ItemGroup>
+
 </Project>

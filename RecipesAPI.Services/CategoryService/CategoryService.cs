@@ -19,7 +19,7 @@ namespace RecipesAPI.Services
         public void Add(Category obj)
         {
             _repository.Add(obj);
-               Save();
+            Save();
         }
 
         public Category GetById(int id)
@@ -43,7 +43,7 @@ namespace RecipesAPI.Services
 
         }
 
-        public async void Update(Category obj)
+        public  void Update(Category obj)
         {
             _repository.Update(obj);
             Save();

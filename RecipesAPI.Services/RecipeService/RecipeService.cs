@@ -18,15 +18,8 @@ namespace RecipesAPI.Services
         
         public void Add(Recipe obj)
         {
-            try
-            {
-                _repository.Add(obj);
-                Save();
-            }
-            catch (Exception)
-            {
-                throw new InvalidOperationException("Error While Creating New Recipe!!");
-            }
+            _repository.Add(obj);
+            Save();
         }
 
         public Recipe GetById(int id)

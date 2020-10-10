@@ -67,10 +67,12 @@ namespace RecipesAPI.Web.Controllers
                 return BadRequest();
             }
 
-            if (_categoryService.GetById(category.CategoryId) == null)
+            if (_categoryService.GetById(id) == null)
                 return NotFound($"No Category With ID : {id} Found!");
-            
-            _categoryService.Update(category);
+
+            var updated = _categoryService.GetById(id);
+            updated.CategoryName = category.CategoryName;
+            _categoryService.Update(updated);
             
             return Ok($"Updated Successfully.");
         }
