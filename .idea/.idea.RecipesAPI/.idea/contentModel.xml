@@ -25,6 +25,9 @@
         </e>
         <e p="RecipesAPI.Data.csproj" t="IncludeRecursive" />
         <e p="RecipesDB.cs" t="Include" />
+        <e p="RequestModels" t="Include">
+          <e p="RecipeRequest.cs" t="Include" />
+        </e>
       </e>
       <e p="RecipesAPI.Repositories" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />

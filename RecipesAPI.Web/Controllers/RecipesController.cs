@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RecipesAPI.Data;
+using RecipesAPI.Data.RequestModels;
 using RecipesAPI.Services;
 
 namespace RecipesAPI.Web.Controllers
@@ -13,10 +14,12 @@ namespace RecipesAPI.Web.Controllers
     public class RecipesController : ControllerBase
     {
         private readonly IRecipeService _recipeService;
+        private readonly ICategoryService _categoryService;
 
-        public RecipesController(IRecipeService recipeService)
+        public RecipesController(IRecipeService recipeService, ICategoryService categoryService)
         {
             _recipeService = recipeService;
+            _categoryService = categoryService;
         }
 
         [HttpGet("/api/recipes")]
@@ -42,14 +45,26 @@ namespace RecipesAPI.Web.Controllers
         }
 
         [HttpPost("/api/recipes")]
-        public ActionResult CreateRecipe([FromBody] Recipe recipe)
+        public ActionResult CreateRecipe([FromBody] RecipeRequest recipe)
         {
             if (!ModelState.IsValid)
                 return BadRequest("Model State is Not Valid!!");
-            
-            _recipeService.Add(recipe);
 
-            return Ok(recipe);
+            Category category = _categoryService.GetById(recipe.CategoryId);
+
+            Recipe newRecipe = new Recipe
+            {
+                RecipeName = recipe.RecipeName, 
+                Category = category, 
+                Description = recipe.Description,
+                CookTime = recipe.CookTime, 
+                PrepareTime = recipe.PrepareTime, 
+                Steps = recipe.Steps
+            };
+            
+            _recipeService.Add(newRecipe);
+
+            return Ok(newRecipe);
                 
         }
 

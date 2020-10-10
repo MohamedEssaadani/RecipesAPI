@@ -38,8 +38,8 @@ namespace RecipesAPI.Services
 
             if (recipes is null || !recipes.Any())
                 throw new InvalidOperationException($"No Recipes Found!");
-            else
-                return recipes;
+            
+            return recipes;
 
         }
 

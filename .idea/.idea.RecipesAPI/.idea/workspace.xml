@@ -9,13 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c621d124-0018-4dbd-ac29-e9c24d87ed18" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RecipesAPI.Data/RequestModels/RecipeRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecipesAPI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/GenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/GenericRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Repositories/RecipesAPI.Repositories.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Repositories/RecipesAPI.Repositories.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Services/CategoryService/CategoryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Services/CategoryService/CategoryService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RecipesAPI.Services/RecipeService/RecipeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Services/RecipeService/RecipeService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/Controllers/CategoriesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/Controllers/CategoriesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecipesAPI.Web/Controllers/RecipesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RecipesAPI.Web/Controllers/RecipesController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +24,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Programming/Projects/.NET/RecipesAPI/RecipesAPI.Web/Controllers/CategoriesController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RecipesAPI.Services/RecipeService/RecipeService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -51,11 +50,12 @@
         <option value="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/IGenericRepository.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Services/RecipeService/ICategoryService.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Services/RecipeService/CategoryService.cs" />
-        <option value="$PROJECT_DIR$/RecipesAPI.Web/Controllers/RecipesController.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Web/Startup.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Services/CategoryService/CategoryService.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Repositories/GenericRepository/GenericRepository.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Web/Controllers/CategoriesController.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Data/RequestModels/RecipeRequest.cs" />
+        <option value="$PROJECT_DIR$/RecipesAPI.Web/Controllers/RecipesController.cs" />
         <option value="$PROJECT_DIR$/RecipesAPI.Services/RecipeService/RecipeService.cs" />
       </list>
     </option>
@@ -126,7 +126,7 @@
       <workItem from="1602070032092" duration="63000" />
       <workItem from="1602159393540" duration="7660000" />
       <workItem from="1602238254770" duration="4371000" />
-      <workItem from="1602329175411" duration="4569000" />
+      <workItem from="1602329175411" duration="7717000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1601981033062</created>
@@ -163,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602197843450</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CategoryService">
+      <created>1602334093070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602334093070</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,29 +197,30 @@
     <MESSAGE value="Create Models in Data ClassLib" />
     <MESSAGE value="Repository-Service" />
     <MESSAGE value="CategoryService &amp; CategoryController" />
-    <option name="LAST_COMMIT_MESSAGE" value="CategoryService &amp; CategoryController" />
+    <MESSAGE value="CategoryService" />
+    <option name="LAST_COMMIT_MESSAGE" value="CategoryService" />
   </component>
   <component name="WindowStateProjectService">
     <state x="133" y="0" width="1106" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602196051831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="133" y="0" width="1106" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1602196051831" />
-    <state width="1311" height="156" key="GridCell.Tab.0.bottom" timestamp="1602333078561">
+    <state width="1311" height="156" key="GridCell.Tab.0.bottom" timestamp="1602336902618">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602333078561" />
-    <state width="1311" height="156" key="GridCell.Tab.0.center" timestamp="1602333078561">
+    <state width="1311" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602336902618" />
+    <state width="1311" height="156" key="GridCell.Tab.0.center" timestamp="1602336902618">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602333078561" />
-    <state width="1311" height="156" key="GridCell.Tab.0.left" timestamp="1602333078560">
+    <state width="1311" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602336902618" />
+    <state width="1311" height="156" key="GridCell.Tab.0.left" timestamp="1602336902618">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602333078560" />
-    <state width="1311" height="156" key="GridCell.Tab.0.right" timestamp="1602333078561">
+    <state width="1311" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602336902618" />
+    <state width="1311" height="156" key="GridCell.Tab.0.right" timestamp="1602336902618">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602333078561" />
+    <state width="1311" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602336902618" />
     <state x="175" y="31" key="Rider.ProjectTemplateDialog.Size" timestamp="1602016300540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -225,10 +233,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-154" y="71" width="1182" height="544" key="VCS.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1602330772712" />
-    <state x="175" y="27" key="Vcs.Push.Dialog.v2" timestamp="1602161486663">
+    <state x="175" y="27" key="Vcs.Push.Dialog.v2" timestamp="1602334112853">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="27" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602161486663" />
+    <state x="175" y="27" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1602334112853" />
     <state x="285" y="65" key="WebReferenceSession.Dialog" timestamp="1602022238205">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
