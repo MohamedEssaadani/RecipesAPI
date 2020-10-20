@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RecipesAPI.Data;
+using RecipesAPI.Repositories.CategoryRepository;
 using RecipesAPI.Repositories.GenericRepository;
 using RecipesAPI.Services;
 
@@ -29,7 +30,9 @@ namespace RecipesAPI.Web
             {
                 options.UseSqlServer(Configuration.GetConnectionString("RecipesDB"));
             });
-            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            //services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped(typeof(IGenericRepository<Category>), typeof(CategoryRepository));
+            services.AddScoped(typeof(IGenericRepository<Recipe>), typeof(RecipeRepository));
             services.AddScoped(typeof(IRecipeService), typeof(RecipeService));
             services.AddScoped(typeof(ICategoryService), typeof(CategoryService));
         }
